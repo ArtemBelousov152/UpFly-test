@@ -1,12 +1,13 @@
 
 
-export default function showModal() {
+export default function showModal(substrate) {
     const modal = document.createElement('div');
 
     modal.classList.add('modal')
-    modal.innerHTML = ` <div class="modal__close">
-                            <span></span>
-                            <span></span>
+    modal.innerHTML = ` <div class="modal__close close ">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L21 21M1 21L21 1" stroke="#69766D" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
                         </div>
                         <h2 class="modal__title">Обратный звонок</h2>
                         <form class="modal__form">
@@ -19,8 +20,7 @@ export default function showModal() {
                         <button class="modal__btn btn">Отправить заявку</button>`
 
     const openModal = document.querySelector('.promo__btn');
-    const substrate = document.querySelector('.substrate');
-    const closeModal = modal.querySelector('.modal__close');
+    const closeModal = modal.querySelector('.close');
     const form = modal.querySelector('.modal__form');
 
     openModal.addEventListener('click', () => {
@@ -32,5 +32,12 @@ export default function showModal() {
         document.body.removeChild(modal);
         substrate.classList.remove('substrate__show');
         form.reset();
+    })
+
+    substrate.addEventListener('click', () => {
+        if (document.querySelector('.modal')) {
+            document.body.removeChild(modal);
+        }
+        substrate.classList.remove('substrate__show');
     })
 }

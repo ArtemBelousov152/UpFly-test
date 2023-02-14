@@ -1,6 +1,24 @@
 .header {
     margin-top: 24px;
 
+    &__menu {
+        display: none;
+        margin-right: 251px;
+
+        span {
+            display: block;
+            background-color: $main-orange;
+            width: 30px;
+            height: 2px;
+            margin-bottom: 8px;
+            border-radius: 10px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -68,12 +86,14 @@
         }
 
         a {
+            display: flex;
+            align-items: center;
             text-decoration: none;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 22px;
-            color: #B8926B;
+            color: $main-orange;
         }
     }
 }

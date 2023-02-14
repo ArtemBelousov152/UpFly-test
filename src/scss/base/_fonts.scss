@@ -8,3 +8,47 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../iconFonts/icomoon.eot?yofagv');
+    src:  url('../../iconFonts/icomoon.eot?yofagv#iefix') format('embedded-opentype'),
+      url('../../iconFonts/icomoon.ttf?yofagv') format('truetype'),
+      url('../../iconFonts/icomoon.woff?yofagv') format('woff'),
+      url('../../iconFonts/icomoon.svg?yofagv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\e900";
+    color: #b8926b;
+  }
+  .icon-pinterest:before {
+    content: "\e901";
+    color: #b8926b;
+  }
+  .icon-twitter:before {
+    content: "\e902";
+    color: #b8926b;
+  }
+  .icon-youtube:before {
+    content: "\e903";
+    color: #b8926b;
+  }

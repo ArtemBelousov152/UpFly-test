@@ -1,0 +1,16 @@
+.close {
+    cursor: pointer;
+    position: absolute;
+
+    &__white {
+        svg {
+            path {
+                stroke: #F6F6F5;;
+            }
+        }
+        span {
+            background-color: #F6F6F5;
+            width: 25px;
+        }
+    }
+}

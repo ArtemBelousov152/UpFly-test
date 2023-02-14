@@ -11,12 +11,57 @@
 </head>
 
 <body>
+    <section class="menu">
+        <div class="menu__close close close__white">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L21 21M1 21L21 1" stroke="#69766D" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </div>
+        <a href="#" class="menu__logo">
+            <img src="./img/whiteLogo.png" alt="logo">
+        </a>
+        <nav class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#">Букеты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu__social">
+            <a href="#" class="menu__social_item">
+                <span class="icon-twitter"></span>
+            </a>
+            <a href="#" class="menu__social_item">
+                <span class="icon-pinterest"></span>
+            </a>
+            <a href="#" class="menu__social_item">
+                <span class="icon-youtube"></span>
+            </a>
+            <a href="#" class="menu__social_item">
+                <span class="icon-facebook"></span>
+            </a>
+        </div>
+    </section>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="header__logo">
+                <div class="header__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__logo">
                     <img src="./img/logo.png" alt="logo">
-                </a>
+                </div>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
@@ -34,12 +79,14 @@
                     </ul>
                 </nav>
                 <div class="header__phone">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.4755 14.678L16.6786 11.8869C15.6797 10.8901 13.9816 11.2889 13.582 12.5847C13.2823 13.4818 12.2834 13.9802 11.3844 13.7808C9.38661 13.2824 6.68957 10.6907 6.19012 8.59745C5.89045 7.70029 6.48979 6.70348 7.3888 6.40448C8.68738 6.00576 9.08694 4.31119 8.08804 3.31438L5.2911 0.523323C4.49198 -0.174441 3.2933 -0.174441 2.59406 0.523323L0.696144 2.41725C-1.20177 4.41087 0.895924 9.69394 5.59078 14.3789C10.2856 19.0639 15.5798 21.2569 17.5776 19.2633L19.4755 17.3693C20.1748 16.5719 20.1748 15.3757 19.4755 14.678Z"
-                            fill="#B8926B" />
-                    </svg>
-                    <a href="tel:+79602102233">+7 (960) 210-22-33</a>
+                    <a href="tel:+79602102233"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.4755 14.678L16.6786 11.8869C15.6797 10.8901 13.9816 11.2889 13.582 12.5847C13.2823 13.4818 12.2834 13.9802 11.3844 13.7808C9.38661 13.2824 6.68957 10.6907 6.19012 8.59745C5.89045 7.70029 6.48979 6.70348 7.3888 6.40448C8.68738 6.00576 9.08694 4.31119 8.08804 3.31438L5.2911 0.523323C4.49198 -0.174441 3.2933 -0.174441 2.59406 0.523323L0.696144 2.41725C-1.20177 4.41087 0.895924 9.69394 5.59078 14.3789C10.2856 19.0639 15.5798 21.2569 17.5776 19.2633L19.4755 17.3693C20.1748 16.5719 20.1748 15.3757 19.4755 14.678Z"
+                                fill="#B8926B" />
+                        </svg>
+                        <span>+7 (960) 210-22-33</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -112,21 +159,6 @@
     </section>
     <div class="substrate"></div>
 
-    <!-- <div class="modal">
-        <div class="modal__close">
-            <span></span>
-            <span></span>
-        </div>
-        <h2 class="modal__title">Обратный звонок</h2>
-        <form class="modal__form">
-            <label for="name">*Имя</label>
-            <input id="name" type="text">
-            <label for="phone">*Телефон</label>
-            <input type="tel" id="phone">
-            <div class="modal__privacy">*Нажимия кнопку “Оставить заявку” я даю согласие на обработку данных</div>
-        </form>
-        <button class="modal__btn btn">Отправить заявку</button>
-    </div> -->
 </body>
 <script src="js/bundle.js"></script>
 

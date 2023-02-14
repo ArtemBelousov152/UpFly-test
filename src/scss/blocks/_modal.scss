@@ -6,7 +6,6 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: 100;
     width: 746px;
-    height: 518px;
     background: #F6F6F5;
     display: flex;
     flex-direction: column;
@@ -14,22 +13,8 @@
 
 
     &__close {
-        cursor: pointer;
-        position: absolute;
         right: 26px;
-        top: 36px;
-
-        span {
-            display: block;
-            background-color: $main-green;
-            width: 30px;
-            height: 2px;
-            transform: rotate(45deg);
-
-            &:nth-child(1) {
-                transform: rotate(-45deg) translateX(-2px) translateY(1px);
-            }
-        }
+        top: 26px;
     }
 
     &__title {

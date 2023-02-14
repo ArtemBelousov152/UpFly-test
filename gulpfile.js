@@ -41,7 +41,8 @@ gulp.task('watch', function () {
     gulp.watch("src/scss/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
     gulp.watch('src/img/**/*').on('all', gulp.parallel('images'));
-    gulp.watch('.src/fonts/**/*').on('all', gulp.parallel('fonts'))
+    gulp.watch('src/fonts/**/*').on('all', gulp.parallel('fonts'));
+    gulp.watch('src/iconFonts/**/*').on('all', gulp.parallel('icon-fonts'));
 })
 
 gulp.task('html', function () {
@@ -56,6 +57,12 @@ gulp.task('fonts', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('icon-fonts',function () {
+    return gulp.src("src/iconFonts/**/*")
+        .pipe(gulp.dest('dist/iconFonts/'))
+        .pipe(browserSync.stream());
+})
+
 gulp.task('images', function () {
     return gulp.src("src/img/**/*.*")
         .pipe(imagemin())
@@ -66,4 +73,4 @@ gulp.task('images', function () {
 
 
 
-gulp.task('default', gulp.parallel('watch', 'js', 'server', 'styles', 'images', 'html', 'fonts'));
+gulp.task('default', gulp.parallel('watch', 'js', 'server', 'styles', 'images', 'html', 'fonts', 'icon-fonts'));

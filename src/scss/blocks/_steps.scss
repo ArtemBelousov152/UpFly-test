@@ -42,10 +42,15 @@
 
         &:nth-child(odd) {
             &::after {
-                top: -8px;
-                right: -54px;
+                top: -3px;
+                right: -62px;
                 position: absolute;
-                content: url('../../img/line1.png');
+                content: "";
+                background-image: url('../../img/line1.png');
+                width: 163px;
+                height: 40px;
+                background-size: cover;
+
             }
         }
 
@@ -54,7 +59,11 @@
                 top: 57px;
                 right: -55px;
                 position: absolute;
-                content: url('../../img/line2.png');
+                content: '';
+                background-image: url('../../img/line2.png');
+                width: 149px;
+                height: 22px;
+                background-size: cover;
             }
         }
 
@@ -63,6 +72,7 @@
 
             &::after {
                 content: '';
+                background-image: none;
             }
         }
     }
