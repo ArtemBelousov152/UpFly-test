@@ -82,6 +82,10 @@
         width: 660px;
     }
 
+    .menu {
+        display: flex;
+    }
+
     .header {
         &__nav {
             display: none;
