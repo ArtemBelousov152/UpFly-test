@@ -1,0 +1,46 @@
+@import url('https://allfont.ru/allfont.css?fonts=garamond');
+@import './base/variables';
+@import './base/mixins';
+@import './base/fonts';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Garamond', arial;
+}
+
+body {
+    background-color: #F6F6F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1122px;
+    position: relative;
+}
+
+@import './blocks/_btn';
+@import './blocks/header';
+@import './blocks//promo';
+@import './blocks/steps';
+@import './blocks/substrate';
+@import './blocks/modal';

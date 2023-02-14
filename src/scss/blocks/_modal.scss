@@ -1,0 +1,101 @@
+.modal {
+    padding: 64px 112px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+    width: 746px;
+    height: 518px;
+    background: #F6F6F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 26px;
+        top: 36px;
+
+        span {
+            display: block;
+            background-color: $main-green;
+            width: 30px;
+            height: 2px;
+            transform: rotate(45deg);
+
+            &:nth-child(1) {
+                transform: rotate(-45deg) translateX(-2px) translateY(1px);
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 47px;
+        color: $main-black;
+
+        &::after {
+            content: url('../../img/smallCIrcle.png');
+            left: -48px;
+            top: -35px;
+            position: absolute;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 48px;
+
+        label {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main-black;
+
+            &:nth-child(3) {
+                margin-top: 32px;
+            }
+        }
+
+        input {
+            margin-top: 11px;
+            height: 40px;
+            padding: 10px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $main-black;
+            border: none;
+            outline: none;
+
+            &:focus {
+                outline: 0.5px solid #D8BFA9;
+            }
+        }
+    }
+
+    &__privacy {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #69766D;
+        margin-top: 10px;
+    }
+
+    &__btn {
+        margin-top: 32px;
+    }
+}

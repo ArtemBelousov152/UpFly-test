@@ -1,0 +1,88 @@
+.steps {
+    margin-top: 82px;
+    padding-bottom: 30px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        color: $main-black;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #D8BFA9;
+            width: 69px;
+            height: 2px;
+            display: block;
+            left: 29.5%;
+            top: -8px;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        position: relative;
+        left: 9px;
+        top: 5px;
+    }
+
+    &__item {
+        position: relative;
+        width: 176px;
+        margin-right: 57px;
+
+        &:nth-child(odd) {
+            &::after {
+                top: -8px;
+                right: -54px;
+                position: absolute;
+                content: url('../../img/line1.png');
+            }
+        }
+
+        &:nth-child(even) {
+            &::after {
+                top: 57px;
+                right: -55px;
+                position: absolute;
+                content: url('../../img/line2.png');
+            }
+        }
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+
+            &::after {
+                content: '';
+            }
+        }
+    }
+
+    &__type {
+        margin-top: 58px;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 20px;
+        color: $main-black;
+    }
+
+    &__descr {
+        margin-top: 25px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-black;
+
+    }
+}
